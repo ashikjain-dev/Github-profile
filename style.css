@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #2a2a72;
+  color: #fff;
+}
+
+.user-form {
+  width: 100%;
+  max-width: 700px;
+}
+
+#search {
+  width: 100%;
+  display: block;
+  background-color: #4c2885;
+  color: #fff;
+  padding: 10px 5px;
+  border: 0;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  font-family: inherit;
+  font-size: 1rem;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05);
+}
+#search:focus {
+  outline: none;
+}
+#search::placeholder {
+  color: #bbb;
+}
+
+.card {
+  max-width: 800px;
+  background-color: #4c2885;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05);
+  display: flex;
+  padding: 3rem;
+  margin: 0 1.5rem;
+}
+.avatar {
+  border-radius: 50%;
+  border: 10px solid #2a2a72;
+  height: 250px;
+  width: 250px;
+}
+.user-info {
+  color: #eee;
+  margin-left: 2rem;
+}
+.user-info h2 {
+  margin-top: 0;
+}
+.user-info ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 400px;
+}
+
+.user-info ul li {
+  display: flex;
+  align-items: center;
+}
+
+.user-info ul li strong {
+  font-family: 0.9rem;
+  margin-left: 0.5rem;
+}
+.repo {
+  text-decoration: none;
+  color: #fff;
+  background-color: #212a72;
+  font-size: 0.7rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+@media (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .user-form {
+    max-width: 400px;
+  }
+}
+
+.header {
+  position: absolute;
+  top: 5%;
+  color: #bbb;
+  font-family: "Poppins", "Open Sans";
+  letter-spacing: 5px;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: capitalize;
+}
